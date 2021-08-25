@@ -9,8 +9,8 @@ a:hover{text-decoration:underline}
 #topbar p{color:white;display:inline-block;margin:0;padding:7.5px 20px}
 #topbar a{padding:7.25px 15px;color:white;display:block;font-family:Roboto;float:right}
 #topbar a:hover{background-color:white;color:black;text-decoration:none}
-#main{padding:30px 30px 280px 30px}
-#footer{height:250px;margin-top:-250px;position:relative}
+#main{padding:30px 30px 290px 30px}
+#footer{height:260px;margin-top:-260px;position:relative}
 #footer *{position:absolute;margin:0;display:inline-block}
 #footer p{top:35px;left:5%}
 #footer-links{top:35px;left:50%;width:45%}
@@ -18,6 +18,7 @@ a:hover{text-decoration:underline}
 
 .line{width:21%;height:0.5em;border-radius:0 0.3em 0.3em 0}
 
+.bg-red{background-color:#7f0000}
 .bg-blue1{background-color:#0060a9}
 .bg-blue2{background-color:#0989cf}
 .bg-orange{background-color:#fe7f1d}
@@ -42,7 +43,8 @@ a:hover{text-decoration:underline}
 html,body{font-size:18px}
 #topbar{height:60px}
 #topbar p{color:white;display:inline-block;margin:0;padding:6px 0 0 10px;width:100%}
-#topbar a{width:25%;padding:5.5px 0}
+#topbar a{width:23%;padding:5.5px 0}
+#topbar a:nth-child(2){width:31%}
 #topbar *{text-align:center}
 #main{padding:15px 15px 285px 15px}
 

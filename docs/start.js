@@ -1,5 +1,8 @@
 // Calculate how many ../ needed for relative file paths
-var pos = window.location.href.lastIndexOf("github.io")
+var pos
+if (window.location.href.lastIndexOf("docs") == -1){pos = window.location.href.lastIndexOf("docs")}
+else {pos = window.location.href.lastIndexOf("docs")}
+
 var str = window.location.href.slice(pos+10);
 var countOfSlash = 0;
 for (i=0;i<str.length;i++){if (str.slice(i,i+1) == "/"){countOfSlash++}}
@@ -42,11 +45,11 @@ document.head.appendChild(style);
 // Footer
 var footer = document.createElement("div");
 footer.id = "footer";
-footer.classList.add("bg-blue1");
+footer.classList.add("bg-grey");
 document.body.appendChild(footer);
 
 // Footer decoration lines
-var lineList = [["80%","bg-green2"],["60%","bg-orange"],["40%","bg-blue2"],["20%","bg-grey"],["0","bg-black"]];
+var lineList = [["80%","bg-red"],["60%","bg-green2"],["40%","bg-orange"],["20%","bg-blue2"],["0","bg-black"]];
 lineList.forEach(function(value){
     var line = document.createElement("div");
     line.style.left = value[0];
@@ -68,8 +71,9 @@ footer.appendChild(footerLinks);
 var footerLinkList = [
     ["https://www.roblox.com/games/4765954059","Play the game now"],
     ["https://www.roblox.com/groups/4401434","Our Roblox group"],
-    ["https://www.facebook.com/groups/142570077449734","Our Facebook page"],
+    ["https://www.youtube.com/channel/UCVwWGoV3Ewa5mKNIhWbky5w","Our YouTube channel"],
     ["https://discord.gg/AxJtf2d","Our Discord server"],
+    ["https://www.facebook.com/groups/142570077449734","Our Facebook page"],
     ["https://delta-line-project.fandom.com","Our wiki in Fandom"],
     ["https://roblox.fandom.com/zh/wiki/Delta_Line_Project","Game page in the Chinese Roblox Wiki"],
 ]

@@ -3,7 +3,30 @@
 <head>
 <title>Network | Delta Line Project</title>
 <style>
-.linename{margin:10px 0}
+.dot-del{stroke:#0989cf;stroke-width:6;fill:white}
+.dot-ans{stroke:#fe7f1d;stroke-width:6;fill:white}
+.dot-ail{stroke:#00ab4e;stroke-width:6;fill:white}
+.dot-lir{stroke:#7f0000;stroke-width:6;fill:white}
+.int{stroke:black;stroke-width:6;fill:white}
+svg{display:none;max-width:1200px;padding:0 10%}
+#btn-del{border-bottom:3px solid #0989cf}
+#btn-ans{border-bottom:3px solid #fe7f1d}
+#btn-ail{border-bottom:3px solid #00ab4e}
+#btn-lir{border-bottom:3px solid #7f0000}
+#btn-del:hover{background-color:#0989cf;color:white}
+#btn-ans:hover{background-color:#fe7f1d;color:white}
+#btn-ail:hover{background-color:#00ab4e;color:white}
+#btn-lir:hover{background-color:#7f0000;color:white}
+#lineList{list-style-type:none;margin:0;padding:0}
+#lineList li{cursor:pointer;width:25%;font-family:Gotham;font-size:25px;padding:5px 0;text-align:center;display:block;float:left;}
+
+@media (max-width:785px){
+    button.linename{font-family:Roboto;font-size:18px;padding:3px 0}
+}
+
+@media (max-width:679px){
+svg *{font-size:25px}
+}
 </style>
 </head>
 <body>
@@ -11,9 +34,54 @@
 <script src="../start.js"></script>
 <div id="main">
 <h1>Routes</h1>
-<p class="center">There are 3 routes operating in the game</p>
-<h2 class="linename">Delta Line</h2>
-<div></div>
+<p class="center">There are 4 routes operating in the game</p>
+<ul id="lineList">
+<li id="btn-del">Delta Line</li>
+<li id="btn-ans">Angle Shuttle</li>
+<li id="btn-ail">Airport Line</li>
+<li id="btn-lir">Light Rail</li>
+</ul>
+<img src="../img/routemap.svg" style="width:100%">
+<svg id="map-del" viewBox="0 0 1200 200">
+<text id="stn-del-bnd" transform="translate(72 40)">Brentwood<tspan x="-6.75" y="25">North Depot</tspan></text>
+<text id="stn-del-btc" transform="translate(262 150)">Brentwood<tspan x="-8.25" y="25">Town Centre</tspan></text>
+<text id="stn-del-gur" transform="translate(431.5 65)">Guildford Road</text>
+<text id="stn-del-csc" transform="translate(620 150)">Cambie Street -<tspan x="23" y="25">Chinatown</tspan></text>
+<text id="stn-del-dlm" transform="translate(836.25 40)">Delta Line<tspan x="6.25" y="25">Museum</tspan></text>
+<text id="stn-del-det" transform="translate(1049.5 150)">Delta</text>
+<rect id="svg-dtl-bg" x="125" y="85" width="950" height="30" style="fill:#0989cf;stroke-width:0"></rect>
+<circle id="dot-del-bnd" cx="125" cy="100" r="20" class="dot-del"></circle>
+<circle id="dot-del-btc" cx="315" cy="100" r="20" class="dot-del"></circle>
+<circle id="dot-del-gur" cx="505" cy="100" r="20" class="dot-del"></circle>
+<circle id="dot-del-csc" cx="695" cy="100" r="20" class="dot-del"></circle>
+<circle id="dot-del-dlm" cx="885" cy="100" r="20" class="dot-del"></circle>
+<circle id="dot-del-det" cx="1075" cy="100" r="20" class="dot-del"></circle>
+</svg>
+
+<svg id="map-ans" viewBox="0 0 1200 200">
+<text id="stn-ans-gur" transform="translate(126.5 65)">Guildford Road</text>
+<text id="stn-ans-alp" transform="translate(921.25 150)">Angle Land Port</text>
+<rect id="svg-ans-bg" x="200" y="85" width="800" height="30" style="fill:#fe7f1d;stroke-width:0"></rect>
+<circle id="dot-ans-gur" cx="200" cy="100" r="20" class="dot-ans"></circle>
+<circle id="dot-ans-alp" cx="1000" cy="100" r="20" class="dot-ans"></circle>
+</svg>
+<script>
+function loadmap(item){
+    document.getElementById("map-del").style.display = "none";
+    document.getElementById("map-ans").style.display = "none";
+//    document.getElementById("map-ail").style.display = "none";
+//    document.getElementById("map-lir").style.display = "none";
+    document.getElementById(item).style.display = "block";
+}
+
+document.getElementById("btn-del").addEventListener("mouseenter",function(){loadmap("map-del")})
+document.getElementById("btn-ans").addEventListener("mouseenter",function(){loadmap("map-ans")})
+
+document.getElementById("btn-del").addEventListener("click",function(){window.location.href = "delta-line.html"})
+document.getElementById("btn-ans").addEventListener("click",function(){window.location.href = "angle-shuttle.html"})
+document.getElementById("btn-ail").addEventListener("click",function(){window.location.href = "airport-line.html"})
+document.getElementById("btn-lir").addEventListener("click",function(){window.location.href = "light-rail.html"})
+</script>
 </div>
 </div>
 </body>
