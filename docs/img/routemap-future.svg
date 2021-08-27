@@ -1,5 +1,5 @@
 
-<svg viewBox="0 0 1050 400" standalone="no" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 1200 400" standalone="no" xmlns="http://www.w3.org/2000/svg">
 <defs>
 <style>
 @font-face{font-family:'Roboto';font-weight:normal;font-style:normal;font-display:swap;
@@ -11,7 +11,7 @@ text{font-family:Roboto,sans-serif;color:black;font-size:25px}
 <path stroke="#0989cf" stroke-width="20" fill="none" d="M 75 200 l 750 0" />
 <path stroke="#fe7f1d" stroke-width="20" fill="none" d="M 375 170 l 0 -20 q 0 -100 100 -100 l 120 0" />
 <path stroke="#00ab4e" stroke-width="20" fill="none" d="M 75 350 l 300 0 q 100 0 100 -100 l 0 -35" />
-<path stroke="#00ab4e" stroke-width="20" fill="none" d="M 475 185 l 0 -5 q 0 -100 100 -100 l 70 0 q 25 0 50 25 l 40 40 q 25 25 50 25 l 180 0" />
+<path stroke="#00ab4e" stroke-width="20" fill="none" d="M 475 185 l 0 -5 q 0 -100 100 -100 l 70 0 q 25 0 50 25 l 40 40 q 25 25 50 25 l 325 0" />
 <path stroke="#7f0000" stroke-width="20" fill="none" d="M 75 230 l 80 0 q 25 0 50 25 l 40 40 q 25 25 50 25 l 80 0" />
 <circle cx="75" cy="200" r="15" stroke-width="5" stroke="black" style="fill:white"></circle>
 <circle cx="225" cy="200" r="15" stroke-width="5" stroke="#0989cf" style="fill:white"></circle>
@@ -26,7 +26,7 @@ text{font-family:Roboto,sans-serif;color:black;font-size:25px}
 <circle cx="585" cy="80" r="15" stroke-width="5" stroke="black" style="fill:white"></circle>
 <circle cx="825" cy="170" r="15" stroke-width="5" stroke="black" style="fill:white"></circle>
 <circle cx="975" cy="170" r="15" stroke-width="5" stroke="#00ab4e" style="fill:white"></circle>
-<!--circle cx="1125" cy="170" r="15" stroke-width="5" stroke="#00ab4e" style="fill:white"></circle-->
+<circle cx="1125" cy="170" r="15" stroke-width="5" stroke="#00ab4e" style="fill:white"></circle>
 <circle cx="75" cy="230" r="15" stroke-width="5" stroke="black" style="fill:white"></circle>
 <circle cx="225" cy="275" r="15" stroke-width="5" stroke="#7f0000" style="fill:white"></circle>
 <circle cx="375" cy="320" r="15" stroke-width="5" stroke="black" style="fill:white"></circle>
@@ -42,7 +42,7 @@ text{font-family:Roboto,sans-serif;color:black;font-size:25px}
 <text transform="translate(294 390)">Brentwood West</text>
 <text transform="translate(505 30)">Angle Land Port</text>
 <text transform="translate(940.5 140)">Airport</text>
-<!--text transform="translate(1072.5 140)">Delta Expo</text-->
+<text transform="translate(1072.5 140)">Delta Expo</text>
 
 <text transform="translate(100 290)">Farmlands</text>
 </svg>
